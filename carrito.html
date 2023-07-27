@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Solo Guitarras | Comprar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Solo Guitarras | Comprar">
+  <meta property="og:description"
+    content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+  <meta property="og:url" content="https://sologuitarras.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/LucianoTreachi/eCommerce-Guitarras/main/img/readme/banner.jpg">
+  <meta property="og:image:alt" content="Banner">
+  <meta property="og:image:width" content="1880">
+  <meta property="og:image:height" content="939">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@SoloGuitarras">
+  <meta name="twitter:title" content="Solo Guitarras | Home">
+  <meta name="twitter:description"
+    content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/LucianoTreachi/eCommerce-Guitarras/main/img/readme/banner.jpg">
+
+  <!-- Remix Icon -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+  <!-- CSS -->
+  <link rel="preload" as="style" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!--===============================
+  HEADER & NAV 
+  ================================-->
+
+  <header>
+    <div class="contenedor">
+      <nav>
+        <!-- Logo -->
+        <a href="./index.html" class="logo">
+          <h1>Solo Guitarras</h1>
+        </a>
+
+        <!-- Navbar -->
+        <ul class="navbar">
+          <li>
+            <a href="./index.html#tienda" class="nav-link">Tienda</a>
+          </li>
+          <li>
+            <a href="./videos.html" class="nav-link">Videos</a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="nav-link" id="link-compras">Tus Compras</a>
+          </li>
+        </ul>
+
+        <!-- Iconos -->
+        <div class="contenedor-iconos">
+          <div class="contenedor-carrito">
+            <img src="./img/carrito/shopping-cart-2-fill.svg" alt="Carrito" class="boton-carrito" id="boton-carrito">
+            <span id="contador-carrito" class="contador-carrito">0</span>
+          </div>
+          <div class="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--===============================
+  MAIN
+  ================================-->
+
+  <main>
+    <!--====== TUS COMPRAS ======-->
+    <section class="compras seccion" id="compras">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Tus Compras</h2>
+
+        <p class="mensaje-carrito-vacio" id="mensaje-carrito-vacio">¡Tu carrito está vacío!</p>
+
+        <div class="carrito-contenedor" id="carrito-contenedor">
+          <!-- JS crea aquí dentro el div "producto-en-carrito" -->
+        </div>
+
+        <button class="boton-vaciar-carrito" id="boton-vaciar-carrito">Vaciar carrito</button>
+
+        <p class="precio-total"> <span id="precio-total">0</span></p>
+
+        <button class="boton-volver-tienda" id="boton-volver-tienda">
+          <i class="ri-arrow-left-line"></i> Volver a la tienda
+        </button>
+
+        <button class="boton-continuar-compra" id="boton-continuar-pagar">
+          Continuar compra
+        </button>
+      </div>
+    </section>
+
+    <!--====== PAGAR ======-->
+    <section class="pagar seccion" id="seccion-pagar">
+
+      <!-- Pregunta Pago -->
+      <div class="pago" id="pago">
+        <h2>¿Cómo quieres pagar?</h2>
+        <div class="opciones">
+          <label for="efectivo">
+            <input type="radio" name="pago" value="efectivo" id="efectivo"> Efectivo
+          </label>
+          <label for="tarjeta">
+            <input type="radio" name="pago" value="tarjeta" id="tarjeta"> Tarjeta de Crédito o Débito
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!--====== DATOS USUARIO ======-->
+    <section class="datos-usuario seccion" id="datos-usuario">
+
+      <!-- Datos Usuario Efectivo -->
+      <div class="datos-usuario-efectivo" id="datos-usuario-efectivo">
+        <h2>Pago en efectivo</h2>
+
+        <form id="formulario-pagar-efectivo" autocomplete="off">
+
+          <div class="campos">
+
+            <h3>Datos Personales</h3>
+            <div class="contenedor-input">
+              <label data-label-input for="input-nombre-efectivo">Nombre</label>
+              <input type="text" id="input-nombre-efectivo">
+              <span data-alerta id="alerta-nombre-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-apellido-efectivo">Apellido</label>
+              <input type="text" id="input-apellido-efectivo">
+              <span data-alerta id="alerta-apellido-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-email-efectivo">Email</label>
+              <input type="text" id="input-email-efectivo">
+              <span data-alerta id="alerta-email-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+
+            <h3>Datos de la Ubicación</h3>
+            <div class="contenedor-input">
+              <label data-label-input for="input-pais-efectivo">País</label>
+              <input type="text" id="input-pais-efectivo">
+              <span data-alerta id="alerta-pais-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-ciudad-efectivo">Ciudad</label>
+              <input type="text" id="input-ciudad-efectivo">
+              <span data-alerta id="alerta-ciudad-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-codigo-postal-efectivo">Código Potal</label>
+              <input type="number" id="input-codigo-postal-efectivo">
+              <span data-alerta id="alerta-codigo-postal-efectivo"></span>
+              <span data-check>✔</span>
+            </div>
+          </div>
+
+          <div class="contenedor-boton">
+            <button type="submit" class="boton-pagar-en-efectivo">Pagar</button>
+            <button type="button" class="boton-cancelar-compra">Cancelar compra</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Datos Usuario Tarjeta -->
+      <div class="datos-usuario-tarjeta" id="datos-usuario-tarjeta">
+        <h2>Pago con tarjeta de Crédito o Débito</h2>
+
+        <form id="formulario-pagar-tarjeta" autocomplete="off">
+
+          <div class="campos">
+
+            <h3>Datos Personales</h3>
+            <div class="contenedor-input">
+              <label data-label-input for="input-nombre-tarjeta">Nombre</label>
+              <input type="text" id="input-nombre-tarjeta">
+              <span data-alerta id="alerta-nombre-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-apellido-tarjeta">Apellido</label>
+              <input type="text" id="input-apellido-tarjeta">
+              <span data-alerta id="alerta-apellido-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-email-tarjeta">Email</label>
+              <input type="text" id="input-email-tarjeta">
+              <span data-alerta id="alerta-email-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+
+            <h3>Datos de la Ubicación</h3>
+            <div class="contenedor-input">
+              <label data-label-input for="input-pais-tarjeta">País</label>
+              <input type="text" id="input-pais-tarjeta">
+              <span data-alerta id="alerta-pais-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-ciudad-tarjeta">Ciudad</label>
+              <input type="text" id="input-ciudad-tarjeta">
+              <span data-alerta id="alerta-ciudad-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-codigo-postal-tarjeta">Código Potal</label>
+              <input type="number" id="input-codigo-postal-tarjeta">
+              <span data-alerta id="alerta-codigo-postal-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+
+            <h3>Datos de la Tarjeta</h3>
+            <div class="contenedor-input">
+              <label data-label-input for="input-numero-tarjeta">Número de Tarjeta</label>
+              <input type="number" id="input-numero-tarjeta">
+              <span data-alerta id="alerta-numero-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-mes-tarjeta">Mes de vencimiento</label>
+              <input type="number" id="input-mes-tarjeta">
+              <span data-alerta id="alerta-mes-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-anio-tarjeta">Año de vencimiento</label>
+              <input type="number" id="input-anio-tarjeta">
+              <span data-alerta id="alerta-anio-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+            <div class="contenedor-input">
+              <label data-label-input for="input-codigo-tarjeta">Código de seguridad</label>
+              <input type="number" id="input-codigo-tarjeta">
+              <span data-alerta id="alerta-codigo-tarjeta"></span>
+              <span data-check>✔</span>
+            </div>
+          </div>
+
+          <div class="contenedor-boton">
+            <button type="submit" class="boton-pagar-con-tarjeta">Pagar</button>
+            <button type="button" class="boton-cancelar-compra">Cancelar compra</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--====== MODAL CARRITO ======-->
+    <div class="modal-fondo" id="modal-carrito">
+      <div class="modal-carrito">
+        <h2>Carrito</h2>
+        <button class="cerrar-modal-carrito" id="cerrar-modal-carrito">
+          <i class="ri-close-circle-fill"></i>
+        </button>
+
+        <p class="mensaje-productos-agregados" id="mensaje-productos-agregados">
+          <!-- Se llena con JS -->
+        </p>
+
+        <button class="boton-continuar-compra" id="boton-continuar-compra">Continuar compra</button>
+
+      </div>
+    </div>
+
+    <!--====== MODAL ELIMINAR PRODUCTO ======-->
+    <div class="modal-fondo" id="modal-eliminar-producto">
+      <div class="modal-eliminar-producto">
+        <h2>¿Eliminar Producto?</h2>
+        <p>Se eliminará el producto agregado</p>
+        <div class="contenedor-botones">
+          <button class="boton-secundario" id="boton-eliminar-no">Cancelar</button>
+          <button class="boton-primario" id="boton-eliminar-si">Eliminar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== MODAL VACIAR CARRITO ======-->
+    <div class="modal-fondo" id="modal-vaciar-carrito">
+      <div class="modal-vaciar-carrito">
+        <h2>¿Vaciar Carrito?</h2>
+        <p>Se eliminarán todos tus productos agregados</p>
+        <div class="contenedor-botones">
+          <button class="boton-secundario" id="boton-vaciar-no">Cancelar</button>
+          <button class="boton-primario" id="boton-vaciar-si">Vaciar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== MODAL CANCELAR COMPRA ======-->
+    <div class="modal-fondo" id="modal-cancelar-compra">
+      <div class="modal-cancelar-compra">
+        <h2>¿Cancelar Compra?</h2>
+        <p>Se cancelará tu compra</p>
+        <div class="contenedor-botones">
+          <button class="boton-secundario" id="boton-cancelar-no">No, continuar</button>
+          <button class="boton-primario" id="boton-cancelar-si">Si, cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== MODAL ALERTA FORMULARIO ======-->
+    <div class="modal-fondo" id="modal-alerta-formulario">
+      <div class="modal-alerta-formulario">
+        <h2>Formulario incompleto</h2>
+        <p>Completa todos los campos</p>
+        <div class="contenedor-botones">
+          <button class="boton-cerrar-modal" id="boton-cerrar-alerta-formulario">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== LOADER ======-->
+    <div class="modal-fondo" id="modal-loader">
+      <div class="modal-loader">
+        <h2>Estamos procesando tu pedido</h2>
+        <div class="loader"></div>
+      </div>
+    </div>
+  </main>
+
+  <!--===============================
+  SCRIPT
+  ================================-->
+
+  <script src="./js/carrito.js"></script>
+
+  <script src="./js/menu.js"></script>
+
+  <script src="./js/validarPago.js"></script>
+
+</body>
+
+</html>

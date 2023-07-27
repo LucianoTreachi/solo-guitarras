@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Solo Guitarras | Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Solo Guitarras | Home">
+  <meta property="og:description"
+    content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+  <meta property="og:url" content="https://sologuitarras.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/LucianoTreachi/eCommerce-Guitarras/main/img/readme/banner.jpg">
+  <meta property="og:image:alt" content="Banner">
+  <meta property="og:image:width" content="1880">
+  <meta property="og:image:height" content="939">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@SoloGuitarras">
+  <meta name="twitter:title" content="Solo Guitarras | Home">
+  <meta name="twitter:description"
+    content="Guitarras Eléctricas y Guitarras Acústicas ¡Comprá desde la comodidad de tu hogar!">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/LucianoTreachi/eCommerce-Guitarras/main/img/readme/banner.jpg">
+
+  <!-- Remix Icon -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+  <!-- CSS -->
+  <link rel="preload" as="style" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!--===============================
+  HEADER & NAV 
+  ================================-->
+
+  <header>
+    <div class="contenedor">
+      <nav>
+        <!-- Logo -->
+        <a href="./index.html" class="logo">
+          <h1>Solo Guitarras</h1>
+        </a>
+
+        <!-- Navbar -->
+        <ul class="navbar">
+          <li>
+            <a href="#tienda" class="nav-link">Tienda</a>
+          </li>
+          <li>
+            <a href="./videos.html" class="nav-link">Videos</a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="nav-link">Tus Compras</a>
+          </li>
+        </ul>
+
+        <!-- Iconos -->
+        <div class="contenedor-iconos">
+          <div class="contenedor-carrito">
+            <img src="./img/carrito/shopping-cart-2-fill.svg" alt="Carrito" class="boton-carrito" id="boton-carrito">
+            <span id="contador-carrito" class="contador-carrito">0</span>
+          </div>
+          <div class="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--==============================
+  MAIN
+  ================================-->
+
+  <main>
+    <!--====== HOME ======-->
+    <section class="home seccion">
+      <h2 class="home-titulo">Solo Guitarras</h2>
+      <a href="#tienda" class="home-boton">Ir a la Tienda</a>
+    </section>
+
+    <!--====== TIENDA ======-->
+    <section class="tienda seccion" id="tienda">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Tienda</h2>
+        <div class="contenedor-productos" id="contenedor-productos">
+          <!-- JS crea aquí dentro el div "producto" -->
+        </div>
+      </div>
+    </section>
+
+    <!--===== NEWSLETTER =====-->
+    <div class="newsletter seccion">
+      <div class="contenedor">
+        <p class="newsletter-parrafo">
+          Suscríbite a nuestro Newsletter para recibir noticias y ofertas especiales!
+        </p>
+        <button class="newsletter-boton" id="newsletter-boton">Suscribirse</button>
+      </div>
+    </div>
+
+    <!--====== MODAL NEWSLETTER ======-->
+    <div class="modal-fondo" id="modal-newsletter">
+      <div class="modal-newsletter">
+
+        <p class="parrafo">Ingresa tus datos y te enviaremos noticias y ofertas especiales</p>
+
+        <form id="formulario" autocomplete="off">
+
+          <div class="contenedor-input">
+            <input type="text" name="input-nombre" class="input" id="input-nombre" placeholder="Nombre">
+            <p class="alerta-nombre" id="alerta-nombre">Ingresá un nombre válido</p>
+          </div>
+
+          <div class="contenedor-input">
+            <input type="text" name="input-apellido" class="input" id="input-apellido" placeholder="Apellido">
+            <p class="alerta-apellido" id="alerta-apellido">Ingresá un apellido válido</p>
+          </div>
+
+          <div class="contenedor-input">
+            <input type="text" name="input-email" class="input" id="input-email" placeholder="Email">
+            <p class="alerta-email" id="alerta-email">Ingresá un email válido</p>
+          </div>
+
+          <button type="submit" class="boton-suscribirse" id="boton-suscribirse" disabled>Suscribirse</button>
+          <button type="button" class="boton-cerrar" id="cerrar-modal-newsletter">Cerrar</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <!--====== MODAL NEWSLETTER EXITOSO ======-->
+    <div class="modal-fondo" id="modal-newsletter-exitoso">
+      <div class="modal-newsletter-exitoso">
+        <h2>¡Perfecto!</h2>
+        <p>Te enviaremos noticias y ofertas especiales!</p>
+        <button type="button" class="boton-cerrar-modal" id="cerrar-modal-newsletter-exitoso">
+          Cerrar
+        </button>
+      </div>
+    </div>
+
+    <!--====== MODAL PRODUCTO INFO ======-->
+    <div class="modal-fondo" id="modal-producto-info">
+      <!-- Se llena con JS -->
+    </div>
+
+    <!--====== MODAL PRODUCTO AGREGADO ======-->
+    <div class="modal-fondo" id="modal-producto-agregado">
+      <div class="modal-producto-agregado">
+        <i class="ri-checkbox-circle-line"></i>
+        <h2>¡Producto Agregado!</h2>
+        <p><!-- Se llena con JS --></p>
+        <span>Revisa el Carrito</span>
+        <button class="boton-cerrar-modal" id="cerrar-modal-producto-agregado">Cerrar</button>
+      </div>
+    </div>
+
+    <!--====== MODAL CARRITO ======-->
+    <div class="modal-fondo" id="modal-carrito">
+      <div class="modal-carrito">
+        <h2>Carrito</h2>
+        <button class="cerrar-modal-carrito" id="cerrar-modal-carrito">
+          <i class="ri-close-circle-fill"></i>
+        </button>
+
+        <p class="mensaje-carrito-vacio" id="mensaje-carrito-vacio">¡Tu carrito está vacío!</p>
+
+        <div class="carrito-contenedor" id="carrito-contenedor">
+          <!-- JS crea aquí dentro el div "producto-en-carrito" -->
+        </div>
+
+        <p class="mensaje-productos-agregados" id="mensaje-productos-agregados">
+          <!-- Se llena con JS -->
+        </p>
+
+        <button class="boton-vaciar-carrito" id="boton-vaciar-carrito">Vaciar carrito</button>
+        <p class="precio-total"> <span id="precio-total">0</span></p>
+        <button class="boton-continuar-compra" id="boton-continuar-compra">Continuar compra</button>
+
+      </div>
+    </div>
+
+    <!--====== MODAL ELIMINAR PRODUCTO ======-->
+    <div class="modal-fondo" id="modal-eliminar-producto">
+      <div class="modal-eliminar-producto">
+        <h2>¿Eliminar Producto?</h2>
+        <p>Se eliminará el producto agregado</p>
+        <div class="contenedor-botones">
+          <button class="boton-secundario" id="boton-eliminar-no">Cancelar</button>
+          <button class="boton-primario" id="boton-eliminar-si">Eliminar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== MODAL VACIAR CARRITO ======-->
+    <div class="modal-fondo" id="modal-vaciar-carrito">
+      <div class="modal-vaciar-carrito">
+        <h2>¿Vaciar Carrito?</h2>
+        <p>Se eliminarán todos tus productos agregados</p>
+        <div class="contenedor-botones">
+          <button class="boton-secundario" id="boton-vaciar-no">Cancelar</button>
+          <button class="boton-primario" id="boton-vaciar-si">Vaciar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--====== DISPLAY NONE ======-->
+    <div class="display-none">
+      <!-- Esta en display none porque pertenece a carrito.html -->
+      <button class="boton-continuar-compra" id="boton-continuar-pagar"></button>
+
+      <!-- Esta en display none porque pertenece a carrito.html -->
+      <div class="pagar" id="seccion-pagar">
+      </div>
+
+      <!-- Esta en display none porque pertenece a carrito.html -->
+      <div class="pago" id="pago">
+        <input type="radio" name="pago" value="efectivo" id="efectivo">
+        <input type="radio" name="pago" value="tarjeta" id="tarjeta">
+        <button class="pagar-en-efectivo" id="pagar-en-efectivo"></button>
+        <button class="pagar-con-tarjeta" id="pagar-con-tarjeta"></button>
+      </div>
+
+      <!-- Esta en display none porque pertenece a carrito.html -->
+      <form class="formulario-pagar-efectivo" id="formulario-pagar-efectivo"></form>
+      <form class="formulario-pagar-tarjeta" id="formulario-pagar-tarjeta"></form>
+
+      <!-- Esta en display none porque pertenece a carrito.html -->
+      <div class="datos-usuario" id="datos-usuario">
+        <div class="datos-usuario-efectivo" id="datos-usuario-efectivo"></div>
+        <div class="datos-usuario-tarjeta" id="datos-usuario-tarjeta"></div>
+      </div>
+    </div>
+  </main>
+
+  <!--==============================
+  FOOTER
+  ================================-->
+
+  <footer class="footer seccion">
+    <div class="contenedor">
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/" aria-label="ir a Facebook">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/" aria-label="ir a Instagram">
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://www.youtube.com/" aria-label="ir a Youtube">
+          <i class="ri-youtube-fill"></i>
+        </a>
+      </div>
+      <p class="footer-parrafo">Copyright 2023 | Solo Guitarras | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!--===============================
+  SCRIPT
+  ================================-->
+
+  <script src="./js/productos.js"></script>
+
+  <script src="./js/cargarProductos.js"></script>
+
+  <script src="./js/carrito.js"></script>
+
+  <script src="./js/menu.js"></script>
+
+  <script src="./js/newsletter.js"></script>
+
+</body>
+
+</html>
