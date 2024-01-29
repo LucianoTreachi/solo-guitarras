@@ -2,9 +2,6 @@
 GLOBAL
 ================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
 :root {
   --color-1: #3448c5;
   --hover-color-1: #3049eb;
@@ -829,7 +826,7 @@ MODAL ELIMINAR PRODUCTO
 .modal-eliminar-producto {
   background: var(--blanco);
   border-radius: var(--border-radius-modal);
-  padding-top: 3rem; 
+  padding-top: 3rem;
   width: 500px;
   max-width: 90%;
   max-height: 90%;
@@ -874,7 +871,7 @@ MODAL VACIAR CARRITO
 .modal-vaciar-carrito {
   background: var(--blanco);
   border-radius: var(--border-radius-modal);
-  padding-top: 3rem; 
+  padding-top: 3rem;
   width: 500px;
   max-width: 90%;
   max-height: 90%;
@@ -919,7 +916,7 @@ MODAL CANCELAR COMPRA
 .modal-cancelar-compra {
   background: var(--blanco);
   border-radius: var(--border-radius-modal);
-  padding-top: 3rem; 
+  padding-top: 3rem;
   width: 500px;
   max-width: 90%;
   max-height: 90%;
@@ -965,7 +962,7 @@ MODAL ALERTA FORMULARIO
 .modal-alerta-formulario {
   background: var(--blanco);
   border-radius: var(--border-radius-modal);
-  padding-top: 3rem; 
+  padding-top: 3rem;
   width: 500px;
   max-width: 90%;
   max-height: 90%;
@@ -1418,7 +1415,8 @@ RESPONSIVE
     padding: 6rem 2rem;
   }
 
-  .compras.seccion, .videos.seccion {
+  .compras.seccion,
+  .videos.seccion {
     padding: 4rem 2rem;
   }
 
@@ -1554,5 +1552,4 @@ RESPONSIVE
   .modal-cancelar-compra .contenedor-botones {
     flex-direction: column-reverse;
   }
-} 
-
+}
