@@ -17,7 +17,7 @@ productos.forEach((producto) => {
   div.innerHTML = `
     <picture>
       <source srcset="${producto.imagenWebp}" alt="${producto.alt}">
-      <img src="${producto.imagen}" alt="${producto.alt}" class="producto-imagen" width="500" height="500"> 
+      <img src="${producto.imagen}" alt="${producto.alt}" class="producto-imagen" width="500" height="500" loading="lazy"> 
     </picture>
     <h3 class="producto-titulo">${producto.titulo}</h3>
     <p class="producto-precio">$ ${producto.precio} USD</p>
