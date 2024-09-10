@@ -393,6 +393,7 @@ SECCION TIENDA
 
 .producto-imagen {
   width: 100%;
+  height: auto;
 }
 
 .producto-titulo {

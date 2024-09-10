@@ -1,5 +1,5 @@
 // Deshabilitar la caché en la página index.html
-window.onpageshow = function(event) {
+window.onpageshow = function (event) {
   if (event.persisted) {
     window.location.reload();
   }
@@ -17,7 +17,7 @@ productos.forEach((producto) => {
   div.innerHTML = `
     <picture>
       <source srcset="${producto.imagenWebp}" alt="${producto.alt}">
-      <img src="${producto.imagen}" alt="${producto.alt}" class="producto-imagen">
+      <img src="${producto.imagen}" alt="${producto.alt}" class="producto-imagen" width="500" height="500"> 
     </picture>
     <h3 class="producto-titulo">${producto.titulo}</h3>
     <p class="producto-precio">$ ${producto.precio} USD</p>
@@ -30,12 +30,12 @@ productos.forEach((producto) => {
 
   // Boton Info: abre el modal producto info
   const botonInfo = document.getElementById(`boton-info${producto.id}`);
-    botonInfo.addEventListener("click", () => {
-      modalProductoInfo.classList.add("active");
-      mostrarProductoInfo(producto.id);
-      body.style.overflow = "hidden";
+  botonInfo.addEventListener("click", () => {
+    modalProductoInfo.classList.add("active");
+    mostrarProductoInfo(producto.id);
+    body.style.overflow = "hidden";
   })
-  
+
   // Boton Agregar: realiza 3 acciones 
   const botonAgregar = document.getElementById(`boton-agregar${producto.id}`);
 
