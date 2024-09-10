@@ -4,20 +4,11 @@ GLOBAL
 
 :root {
   --color-1: #3448c5;
-  --hover-color-1: #3049eb;
-
   --color-2: #db1436;
-  --hover-color-2: #ff002b;
-
   --color-3: #16e08c;
-
   --negro: #1b1b1b;
-  --hover-negro: #000000;
-
   --blanco: #f8f5f8;
-
   --gris: #d1d6e0;
-  --hover-gris: #b2b6be;
 
   --footer: #121212;
 
@@ -44,6 +35,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.75;
 }
 
 ::-webkit-scrollbar {
@@ -111,13 +106,9 @@ a {
   border: 0;
   border-radius: var(--border-radius-boton);
   background: var(--negro);
-  padding: .8rem 1.5rem;
+  padding: 1rem 3rem;
   cursor: pointer;
   transition: .4s;
-}
-
-.boton-cerrar-modal:hover {
-  background: var(--hover-negro);
 }
 
 .boton-primario {
@@ -128,19 +119,11 @@ a {
   transition: .4s;
 }
 
-.boton-primario:hover {
-  background-color: var(--hover-color-2);
-}
-
 .boton-secundario {
   padding: 1.2rem 2.8rem;
   font-weight: 500;
   background-color: var(--gris);
   transition: .4s;
-}
-
-.boton-secundario:hover {
-  background-color: var(--hover-gris)
 }
 
 @keyframes fadeIn {
@@ -455,17 +438,9 @@ SECCION TIENDA
   color: var(--blanco);
 }
 
-.producto .boton-agregar:hover {
-  background-color: var(--hover-color-1);
-}
-
 .producto .boton-info {
   color: #111f39;
   background-color: #e3edfb;
-}
-
-.producto .boton-info:hover {
-  background-color: #d3e2f7;
 }
 
 /*=============================== 
@@ -494,10 +469,6 @@ SECCION NEWSLETTER
   font-weight: 600;
   cursor: pointer;
   transition: .4s;
-}
-
-.newsletter-boton:hover {
-  background-color: #e3edfb;
 }
 
 /*=============================== 
@@ -714,9 +685,9 @@ MODAL CARRITO
 
 .cerrar-modal-carrito {
   position: absolute;
-  top: 22px;
-  right: 15px;
-  font-size: 3rem;
+  top: 1rem;
+  right: 1rem;
+  font-size: 5rem;
   color: var(--negro);
   border: none;
   background: none;
@@ -739,15 +710,17 @@ MODAL CARRITO
 .boton-vaciar-carrito {
   margin: 2rem 0;
   padding: .5rem 1rem;
-  background-color: var(--gris);
+  background-color: var(--color-2);
   border: 0;
   border-radius: var(--border-radius-boton);
+  color: var(--blanco);
+  font-weight: 600;
   cursor: pointer;
   transition: .4s;
 }
 
 .boton-vaciar-carrito:hover {
-  background-color: var(--hover-gris);
+  opacity: .7;
 }
 
 .modal-carrito .precio-total {
@@ -813,10 +786,6 @@ MODAL CARRITO
   border: none;
   cursor: pointer;
   transition: .4s;
-}
-
-.boton-continuar-compra:hover {
-  background-color: var(--hover-color-1);
 }
 
 /*=============================== 
@@ -1234,11 +1203,6 @@ span[data-check] {
   transition: .3s;
 }
 
-.boton-pagar-en-efectivo:hover,
-.boton-pagar-con-tarjeta:hover {
-  background: var(--hover-color-1);
-}
-
 .boton-cancelar-compra {
   font-size: 1.7rem;
   font-weight: 500;
@@ -1360,10 +1324,6 @@ SECCION EXITO
   transition: .4s;
 }
 
-.exito .contenedor-botones button:hover {
-  background-color: var(--hover-color-1);
-}
-
 /*=============================== 
 FOOTER
 ================================*/
@@ -1393,7 +1353,6 @@ FOOTER
 
 .redes-sociales i:hover {
   opacity: 1;
-  color: #e3edfb;
 }
 
 .footer-parrafo {
