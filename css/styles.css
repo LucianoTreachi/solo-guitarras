@@ -783,7 +783,7 @@ MODAL CARRITO
   border-radius: .8rem;
   font-size: 1.6rem;
   font-weight: 600;
-  padding: 1.5rem 2rem;
+  padding: 2rem 6rem;
   border: none;
   cursor: pointer;
   transition: .4s;
@@ -1032,13 +1032,24 @@ SECCION TUS COMPRAS
   align-items: center;
   gap: 1rem;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   border: none;
   background: transparent;
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 500;
+  position: relative;
   transition: .3s;
+}
+
+.boton-volver-tienda::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 75%;
+  height: 2px;
+  background-color: var(--negro);
 }
 
 .boton-volver-tienda i {
@@ -1051,7 +1062,7 @@ SECCION TUS COMPRAS
 }
 
 .compras .boton-continuar-compra {
-  margin: 2rem auto 0;
+  margin: 4rem auto 0;
 }
 
 /*=============================== 
@@ -1207,6 +1218,7 @@ span[data-check] {
 .boton-cancelar-compra {
   font-size: 1.7rem;
   font-weight: 500;
+  text-decoration: underline;
   color: var(--negro);
   padding: 1.5rem 2rem;
   background-color: transparent;
