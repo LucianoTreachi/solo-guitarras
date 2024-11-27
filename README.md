@@ -1,17 +1,34 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/LucianoTreachi/Ecommerce-Guitarras/main/img/readme/banner.jpg" width="100%" alt="Banner"/>
-</div>
+# Solo Guitarras: : Tienda Online de Guitarras
 
-### ✅ Proyecto
+**Solo Guitarras** es una pequeña tienda online que vende guitarras eléctricas y acústicas.
 
-- Diseñé y desarrollé un pequeño e-commerce de guitarras con características destacadas. Implementé animaciones nativas de CSS, un carrito de compras, modales, validaciones en formularios y una pantalla de éxito, entre otras funcionalidades. Además, el sitio es 100% responsivo, adaptándose de manera óptima a cualquier dispositivo, ya sea escritorio, tablet o móvil.
+## Vista previa
 
-### ⚡ Tecnologías Utilizadas
+[![Captura de pantalla del proyecto](https://i.postimg.cc/Nj2HKTzr/website.jpg)](https://postimg.cc/sMyX8ByV)
 
-- HTML5
-- CSS3
-- JavaScript
+## Características
 
-### 👽 Autor
+- **Ver carrito:** Consulta el carrito de compras en cualquier momento.
+- **Agregar producto:** Añade productos al carrito con un solo clic.
+- **Eliminar producto:** Elimina productos fácilmente del carrito.
+- **Notificación mediante modales:** Recibe notificaciones interactivas.
+- **Simulación de compra:** Simula el proceso de compra con tarjeta de crédito o pago en efectivo.
 
-- Luciano Treachi
+## Explora el sitio web
+
+Accede aquí → [Solo Guitarras](https://sologuitarras.netlify.app/)
+
+## Tecnologías utilizadas
+
+- **HTML:** Estructura y contenido.
+- **CSS:** Estilización y diseño responsivo.
+- **JavaScript:** Funcionalidad interactiva.
+
+## Desarrollado por
+
+**Luciano Treachi**
+
+Soy un Desarrollador Frontend dedicado a crear soluciones web eficientes, accesibles, intuitivas y fáciles de usar que potencian la experiencia del usuario.
+
+[![Sitio Web](https://img.shields.io/badge/Sitio_Web-black?style=for-the-badge&logoColor=white)](https://lucianotreachi.vercel.app/)
+[![linkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/luciano-treachi/)
