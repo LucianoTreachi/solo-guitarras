@@ -1,4 +1,4 @@
-# Solo Guitarras: : Tienda Online de Guitarras
+# Solo Guitarras: Tienda Online de Guitarras
 
 **Solo Guitarras** es una pequeña tienda online que vende guitarras eléctricas y acústicas.
 
