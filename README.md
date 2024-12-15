@@ -9,20 +9,26 @@
 ## Características
 
 - **Ver carrito:** Consulta el carrito de compras en cualquier momento.
+
 - **Agregar producto:** Añade productos al carrito con un solo clic.
+
 - **Eliminar producto:** Elimina productos fácilmente del carrito.
+
 - **Notificación mediante modales:** Recibe notificaciones interactivas.
+
 - **Simulación de compra:** Simula el proceso de compra con tarjeta de crédito o pago en efectivo.
-
-## Explora el sitio web
-
-Accede aquí → [Solo Guitarras](https://sologuitarras.netlify.app/)
 
 ## Tecnologías utilizadas
 
 - **HTML:** Estructura y contenido.
+
 - **CSS:** Estilización y diseño responsivo.
+
 - **JavaScript:** Funcionalidad interactiva.
+
+## Explora el sitio web
+
+Accede aquí → [Solo Guitarras](https://sologuitarras.netlify.app/)
 
 ## Desarrollado por
 
