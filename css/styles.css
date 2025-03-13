@@ -803,7 +803,7 @@ MODAL ELIMINAR PRODUCTO
   width: 500px;
   max-width: 90%;
   max-height: 90%;
-  overflow: hidden;
+  overflow: auto;
   animation: scale 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
@@ -848,7 +848,7 @@ MODAL VACIAR CARRITO
   width: 500px;
   max-width: 90%;
   max-height: 90%;
-  overflow: hidden;
+  overflow: auto;
   animation: scale 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
@@ -893,7 +893,7 @@ MODAL CANCELAR COMPRA
   width: 500px;
   max-width: 90%;
   max-height: 90%;
-  overflow: hidden;
+  overflow: auto;
   animation: scale 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
